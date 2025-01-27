@@ -114,7 +114,7 @@
             <p><strong>Date:</strong> <%= event.getString("date") %></p>
             <p><strong>Status:</strong> <%= event.getString("status") %></p>
             <p><strong>Lecturer ID:</strong> <%= event.getString("lid") %></p>
-            <a href="manageEvent.jsp?eid=<%= event.getString("eid") %>" class="btn">Manage</a>
+            <a href="./manageEvent.jsp?eid=<%= event.getString("eid") %>" class="btn">Manage Event</a>
         </div>
         <%
                     }

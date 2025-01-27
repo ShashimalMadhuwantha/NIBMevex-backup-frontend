@@ -74,7 +74,7 @@
 <div class="container">
     <div class="card">
         <h3>Create Workshop</h3>
-        <form method="post" action="createWorkshop.jsp">
+        <form method="post" action="./createWorkshop.jsp">
             <div class="form-group">
                 <label for="name">Workshop Name</label>
                 <input type="text" id="name" name="name" required>

@@ -74,7 +74,7 @@
 <div class="container">
     <div class="card">
         <h3>Create Announcement</h3>
-        <form method="post" action="createAnnouncement.jsp">
+        <form method="post" action="./createAnnouncement.jsp">
             <div class="form-group">
                 <label for="name">Announcement Name</label>
                 <input type="text" id="name" name="name" required>

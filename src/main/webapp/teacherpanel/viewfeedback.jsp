@@ -133,7 +133,7 @@
                 <td><%= feedback.getString("description") %></td>
                 <td><%= feedback.getString("eid") %></td>
                 <td>
-                    <a href="viewportfolio.jsp?studentid=<%= feedback.getString("sender") %>" class="icon">&#128100;</a>
+                    <a href="./viewportfolio.jsp?studentid=<%= feedback.getString("sender") %>" class="icon">&#128100;</a>
                 </td>
             </tr>
             <%

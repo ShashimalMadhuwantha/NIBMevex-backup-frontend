@@ -86,17 +86,17 @@
         <div class="option-card">
             <h2>Announcement</h2>
             <p>Create an announcement for students or staff with batch information.</p>
-            <a href="createAnnouncement.jsp">Create Announcement</a>
+            <a href="./createAnnouncement.jsp">Create Announcement</a>
         </div>
         <div class="option-card">
             <h2>Workshop</h2>
             <p>Organize a workshop with details like date, location, and speaker.</p>
-            <a href="createWorkshop.jsp">Create Workshop</a>
+            <a href="./createWorkshop.jsp">Create Workshop</a>
         </div>
         <div class="option-card">
             <h2>Interview</h2>
             <p>Schedule an interview by adding interviewers, location, and date.</p>
-            <a href="createInterview.jsp">Create Interview</a>
+            <a href="./createInterview.jsp">Create Interview</a>
         </div>
     </div>
 </div>

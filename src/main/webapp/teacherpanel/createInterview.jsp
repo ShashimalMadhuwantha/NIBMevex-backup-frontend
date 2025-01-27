@@ -74,7 +74,7 @@
 <div class="container">
   <div class="card">
     <h3>Create Interview Event</h3>
-    <form method="post" action="createInterview.jsp">
+    <form method="post" action="./createInterview.jsp">
       <div class="form-group">
         <label for="name">Event Name</label>
         <input type="text" id="name" name="name" required>

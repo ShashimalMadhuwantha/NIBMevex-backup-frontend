@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminlogin.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/admindashboard.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/adminevent.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/manageStudents.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/managestudent.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/adminpanel/updateLecturer.jsp" value="file://$PROJECT_DIR$/src/main/webapp/adminpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/assigninterviewstudent.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/nav.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/teacherdashboard.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/teacherpanel/assigninterview.jsp" value="file://$PROJECT_DIR$/src/main/webapp/teacherpanel" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/viewWorkshopStudent.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/viewfeedback.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+      </map>
+    </option>
+  </component>
+</project>

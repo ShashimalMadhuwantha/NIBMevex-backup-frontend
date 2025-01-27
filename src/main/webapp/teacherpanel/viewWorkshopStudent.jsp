@@ -99,8 +99,9 @@
         }
 
         // Parse JSON and display students in a table
-        if (studentsData != null) {
-            if (studentsData.startsWith("[")) {
+        if (studentsData != null && studentsData.startsWith("[")) {
+            try {
+                JSONArray students = new JSONArray(studentsData);
     %>
     <div class="card">
         <h4>Event ID: <%= eid %></h4>
@@ -116,21 +117,11 @@
             </thead>
             <tbody>
             <%
-                JSONArray students = new JSONArray(studentsData);
                 for (int i = 0; i < students.length(); i++) {
-                    String student = students.getString(i).trim();
-                    try {
-                        String id = "", name = "", email = "";
-                        String[] parts = student.split(", ");
-                        for (String part : parts) {
-                            if (part.startsWith("ID: ")) {
-                                id = part.replace("ID: ", "").trim();
-                            } else if (part.startsWith("Name: ")) {
-                                name = part.replace("Name: ", "").trim();
-                            } else if (part.startsWith("Email: ")) {
-                                email = part.replace("Email: ", "").trim();
-                            }
-                        }
+                    JSONObject student = students.getJSONObject(i);
+                    String id = student.getString("id");
+                    String name = student.getString("name");
+                    String email = student.getString("email");
             %>
             <tr>
                 <td><%= id %></td>
@@ -144,26 +135,25 @@
                 </td>
             </tr>
             <%
-            } catch (Exception e) {
-            %>
-            <tr>
-                <td colspan="5" style="color: red;">Invalid student data format</td>
-            </tr>
-            <%
-                    }
                 }
             %>
             </tbody>
         </table>
     </div>
     <%
+    } catch (JSONException e) {
+    %>
+    <div style="color: red;">
+        Invalid JSON format: <%= e.getMessage() %>
+    </div>
+    <%
+        }
     } else {
     %>
     <div style="color: red;">
-        <%= studentsData %>
+        No data available or failed to fetch data.
     </div>
     <%
-            }
         }
     %>
 </div>

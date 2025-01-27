@@ -6,7 +6,7 @@
     String sessionDetails = null;
     String role = "Lecturer"; // Placeholder for role, replace with actual session role if available
     try {
-        URL url = new URL("http://localhost:8080/api/session/details");
+        URL url = new URL("http://localhost:8080/api/v1/session/details");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
         connection.setRequestProperty("Accept", "application/json");
@@ -142,7 +142,7 @@
     </div>
 </div>
 
-<a href="viewannouncement.jsp" class="main-icon">
+<a href="./viewannouncement.jsp" class="main-icon">
     <i>&#128276;</i>
 </a>
 

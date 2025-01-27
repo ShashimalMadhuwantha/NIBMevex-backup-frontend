@@ -112,8 +112,7 @@
             <p><strong>Event ID:</strong> <%= interview.getString("eid") %></p>
             <p><strong>Date:</strong> <%= interview.getString("date") %></p>
             <p><strong>Location:</strong> <%= interview.getString("location") %></p>
-            <!-- Changed the link to 'assigninterviewstudent.jsp' -->
-            <a href="assigninterviewstudent.jsp?eid=<%= interview.getString("eid") %>" class="btn">Assign Students</a>
+            <a href="./assigninterviewstudent.jsp?eid=<%= interview.getString("eid") %>" class="btn">Assign Students</a>
         </div>
         <%
                     }

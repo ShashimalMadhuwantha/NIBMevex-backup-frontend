@@ -88,7 +88,7 @@
     <% } else { %>
     <div class="card">
         <h4>Event ID: <%= eid %></h4>
-        <form method="post" action="manageEvent.jsp">
+        <form method="post" action="./manageEvent.jsp">
             <input type="hidden" name="eid" value="<%= eid %>">
             <div class="form-group">
                 <label for="status">Update Status</label>
@@ -99,7 +99,7 @@
             </div>
             <button type="submit" class="btn" name="action" value="update">Update Status</button>
         </form>
-        <form method="post" action="manageEvent.jsp">
+        <form method="post" action="./manageEvent.jsp">
             <input type="hidden" name="eid" value="<%= eid %>">
             <button type="submit" class="btn btn-delete" name="action" value="delete">Delete Event</button>
         </form>
@@ -133,7 +133,7 @@
             }
         } else if ("delete".equals(action)) {
             try {
-                URL url = new URL("http://localhost:8080/api/v1/" + eid);
+                URL url = new URL("http://localhost:8080/api/v1/event/delete/" + eid);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("DELETE");
                 connection.setRequestProperty("Accept", "application/json");

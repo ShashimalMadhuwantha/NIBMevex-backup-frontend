@@ -70,7 +70,7 @@
         if (studentId != null) {
             try {
                 // Connect to the backend API
-                URL url = new URL("http://localhost:8080/api/v1/students/lecturer/" + studentId);
+                URL url = new URL("http://localhost:8080/api/v1/students/portfolio/" + studentId);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
                 connection.setRequestProperty("Accept", "application/json");

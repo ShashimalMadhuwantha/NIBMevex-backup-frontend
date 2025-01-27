@@ -117,7 +117,7 @@
             <p><strong>Speaker:</strong> <%= workshop.getString("speaker") %></p>
             <p><strong>Duration:</strong> <%= workshop.getString("duration") %></p>
             <p><strong>Batch ID:</strong> <%= workshop.getString("bid") %></p>
-            <a href="viewWorkshopStudent.jsp?eid=<%= workshop.getString("eid") %>" class="btn">View Students</a>
+            <a href="./viewWorkshopStudent.jsp?eid=<%= workshop.getString("eid") %>" class="btn">View Students</a>
         </div>
         <%
                     }
